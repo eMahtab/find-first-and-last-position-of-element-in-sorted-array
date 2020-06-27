@@ -30,3 +30,9 @@ Output: [5,5]
 3. nums is a non decreasing array.
 4. -10^9 <= target <= 10^9
 
+## Approach :
+We can easily solve this question in O(n), but since the array is sorted we should use binary search to solve this problem in O(logn).
+
+So first we will find the index of the first occurance of `target`
+And if the index of first occurance of target is not `-1`, it means `target` exists in the array.
+Next we will find the index of the last occurance of `target`
